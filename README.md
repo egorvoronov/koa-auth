@@ -1,4 +1,4 @@
-Chat-with-auth-on-koa-js
+Koa-auth
 ========================
 
 # Short description
