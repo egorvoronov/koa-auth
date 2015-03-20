@@ -1,0 +1,10 @@
+extends /layout
+
+block stateString
+  if user
+    div You're authorized as
+      b &nbsp;#{user.login}
+    button(id = 'logout') Log out
+    script(src="/assets/scripts/logout.js")
+  else
+    div Sorry, but you are not authorized.

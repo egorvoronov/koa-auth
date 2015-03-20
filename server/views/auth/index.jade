@@ -1,0 +1,11 @@
+extends /layoutWithAuth
+
+block content
+  form.authForm(method="post", action=action)
+    h2= title
+    div
+      input(type="email", name="login", placeholder="Email", autofocus)
+    div
+      input(type="password", name="password", placeholder="Password")
+    button(type="submit")= buttonName
+  script(src="/assets/scripts/auth.js")

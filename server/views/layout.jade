@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    block title
+      title= title
+    block scripts
+    block metas
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+    block links
+    body
+      nav
+        a(href = '/')
+          b Main page is here!!!
+          | &nbsp;|&nbsp;
+        a(href = '/register') Sign Up |&nbsp;
+        a(href = '/login') Log in
+
+      br
+
+      block stateString
+
+      block content
